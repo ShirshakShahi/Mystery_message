@@ -1,9 +1,7 @@
 import React from "react";
 import { Inter } from "next/font/google";
 import Head from "next/head";
-import "./globals.css";
-import AuthProvider from "@/context/AuthProvider";
-import { Toaster } from "@/components/ui/toaster";
+// import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,12 +23,12 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
         {/* Any additional meta tags, CSS, or scripts can go here */}
       </Head>
-      <AuthProvider>
-        <html lang="en">
-          <body className={inter.className}>{children}</body>
-          <Toaster />
-        </html>
-      </AuthProvider>
+      <html lang="en">
+        <body className={inter.className}>
+          <Navbar />
+          {children}
+        </body>
+      </html>
     </>
   );
 }

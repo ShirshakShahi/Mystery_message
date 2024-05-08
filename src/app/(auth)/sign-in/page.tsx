@@ -51,6 +51,7 @@ const page = () => {
     }
 
     if (result?.url) {
+      console.log(result.url);
       router.replace("/dashboard");
     }
   };

@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { useToast } from "@/components/ui/use-toast";
 import { useParams, useRouter } from "next/navigation";
 import axios, { AxiosError } from "axios";
-import { ApiResponse } from "../../../../types/ApiResponse";
+import { ApiResponse } from "../../../../../types/ApiResponse";
 import {
   Form,
   FormControl,
